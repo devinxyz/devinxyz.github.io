@@ -1,0 +1,26 @@
+body {
+	min-height: 3000px;
+}
+.jumbotron {
+	font-size: 21px;
+	padding-top: 6rem;
+	background-color: #a2d9ff;
+}
+
+#projects {
+	background-color: #a2d9ff;
+}
+
+#contact {
+	background-color: #a2d9ff;
+}
+
+#skill {
+	
+	font-size: 50px;
+	
+}
+
+section {
+	padding-top: 5rem;
+}
