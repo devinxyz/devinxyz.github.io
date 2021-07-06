@@ -55,7 +55,7 @@
 <section class="jumbotron text-center">
   <img src="img/E.jpg" alt="logo" width="200" class="rounded-circle img-thumbnail">
   <h1 class="display-4">Devin Prianto</h1>
-  <p class="lead">Mahasiswa | Teknik Informatika <i class="bi bi-laptop"></i></p>
+  <p class="lead">College student | Technical Information <i class="bi bi-laptop"></i></p>
   <a href="https://www.facebook.com/devinxyz" target="_blank"><i class="bi bi-facebook text-dark mx-2"></i></a>
   <a href="https://www.instagram.com/devinxyz" target="_blank"><i class="bi bi-instagram text-dark mx-2"></i></a>
   <a href="https://github.com/devinxyz" target="_blank"><i class="bi bi-github text-dark mx-2"></i></a>
@@ -145,7 +145,7 @@
     <div class="row justify-content-center text-center">
       <div class="container">
   <div class="container mb-3">
-        <h6>These are some tools and softwares that i'm good at.</h6>
+        <h6>These are some of the tools and software I use.</h6>
   </div>
   <img src="img/projects/9.png" alt="logo" width="100" class="rounded-circle img-thumbnail mb-2">
   <img src="img/projects/10.jpg" alt="logo" width="100" class="rounded-circle img-thumbnail mb-2">
@@ -172,21 +172,30 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form>
+        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+        <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        <form name="wpu-contact-form">
           <div class="mb-3">
             <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control shadow" id="name" aria-describedby="name">
+            <input type="text" class="form-control shadow" id="name" aria-describedby="name" name="nama">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control shadow" id="email" aria-describedby="email">
+            <input type="email" class="form-control shadow" id="email" aria-describedby="email" name="email">
           </div>
           <div class="mb-3">
           <label for="pesan" class="form-label">Pesan</label>
-          <textarea class="form-control shadow" id="pesan" rows="3"></textarea>
+          <textarea class="form-control shadow" id="pesan" rows="3" name="pesan"></textarea>
         </div>
           
-          <button type="submit" class="btn btn-dark shadow">Kirim</button>
+          <button type="submit" class="btn btn-dark shadow btn-kirim">Kirim</button>
+
+          <button class="btn btn-dark btn-loading d-none" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
         </form>
       </div>
     </div>
@@ -204,6 +213,35 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzSoHEDJrGhTKMhsTvwQNjdNbyfgawJaQohCME3y_roTOMklZRyYqyDE8vGTbuQGHBtWw/exec'
+  const form = document.forms['wpu-contact-form']
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    // ketika tombol submit di klik
+    // tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        // tampilkan tombol kirim, hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        // tampilkan alert
+        myAlert.classList.toggle('d-none');
+        // reset form
+        form.reset();
+        console.log('Success!', response);
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
   </body>
 </html>
