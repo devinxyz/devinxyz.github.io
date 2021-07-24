@@ -7,18 +7,33 @@ body {
 	background-color: #a2d9ff;
 }
 
-#projects {
-	background-color: #a2d9ff;
+#about {
+	background-color: #e7e092; 
 }
 
-#contact {
-	background-color: #a2d9ff;
+#sertifikat {
+	background-color: #f1b27d;
+}
+
+#projects {
+	background-color: #f285ad;
 }
 
 #skill {
 	
+	background-color: #ecda5e;
 	font-size: 50px;
 	
+}
+
+#contact {
+	background-color: #ce95e9;
+
+}
+
+#footer {
+	background-color: #212529;
+	font-size: 20px; color: #a2d9ff;
 }
 
 section {
