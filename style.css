@@ -1,41 +1,56 @@
 body {
-	min-height: 3000px;
+  min-height: 3000px;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: "Lobster", cursive;
 }
 .jumbotron {
-	font-size: 21px;
-	padding-top: 6rem;
-	background-color: #a2d9ff;
+  font-family: "Lobster", cursive;
+  font-size: 21px;
+  padding-top: 6rem;
+  background-color: #a2d9ff;
+  overflow: hidden;
 }
 
 #about {
-	background-color: #e7e092; 
+  font-family: "Lobster", cursive;
+  background-color: #e7e092;
+  overflow: hidden;
 }
 
 #sertifikat {
-	background-color: #f1b27d;
+  font-family: "Lobster", cursive;
+  background-color: #f1b27d;
 }
 
 #projects {
-	background-color: #f285ad;
+  font-family: "Lobster", cursive;
+  background-color: #f285ad;
+  overflow: hidden;
 }
 
 #skill {
-	
-	background-color: #ecda5e;
-	font-size: 50px;
-	
+  font-family: "Lobster", cursive;
+  background-color: #ecda5e;
+  font-size: 50px;
+  overflow: hidden;
 }
 
 #contact {
-	background-color: #ce95e9;
-
+  font-family: "Lobster", cursive;
+  background-color: #ce95e9;
+  overflow: hidden;
 }
 
 #footer {
-	background-color: #212529;
-	font-size: 20px; color: #a2d9ff;
+  font-family: "Lobster", cursive;
+  background-color: #212529;
+  font-size: 20px;
+  color: #a2d9ff;
 }
 
 section {
-	padding-top: 5rem;
+  padding-top: 5rem;
 }
