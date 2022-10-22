@@ -1,13 +1,13 @@
 body {
-  min-height: 3000px;
+  min-height: 3500px;
 }
 
 .navbar {
   overflow: hidden;
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
 }
 .jumbotron {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 21px;
   padding-top: 6rem;
   background-color: #a2d9ff;
@@ -15,37 +15,39 @@ body {
 }
 
 #about {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #e7e092;
   overflow: hidden;
 }
 
 #sertifikat {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #f1b27d;
 }
 
 #projects {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #f285ad;
   overflow: hidden;
+  
 }
 
 #skill {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #ecda5e;
   font-size: 50px;
   overflow: hidden;
+  
 }
 
 #contact {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #ce95e9;
   overflow: hidden;
 }
 
 #footer {
-  font-family: "Lobster", cursive;
+  font-family: 'Poppins', sans-serif;
   background-color: #212529;
   font-size: 20px;
   color: #a2d9ff;
