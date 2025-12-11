@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devin Prianto-Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+        <img src="./assets/images/pp1.jpg" alt="Devin Prianto">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title=" Devin Prianto">Devin Prianto</h1>
+
+       <p class="title">
+  <span id="typing-text"></span>
+</p>
+
+
+
+   
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <!-- Email -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:devinprianto99@gmail.com" class="contact-link">devinprianto99</a>
+            </div>
+          </li>
+
+          <!-- LinkedIn -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/devin-prianto-549001387/" class="contact-link" target="_blank">
+                Devin Prianto
+              </a>
+            </div>
+          </li>
+
+          <!-- Birthday -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+             <p class="contact-title">Instagram</p>
+              <a href="https://www.instagram.com/devinxyz/" class="contact-link" target="_blank">
+                @devinxyz
+              </a>
+            </div>
+          </li>
+
+          <!-- Location -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Pangandaran, West Java, Indonesia</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Copyright -->
+        <div class="copyright-box" style="text-align:center; padding: 10px 0;">
+          <h5 class="article-title gradient-title" style="font-size: 0.9rem; opacity: 0.75;">
+            © Devin Prianto 2025
+          </h5>
+        </div>
+
+      </div>
+
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skill</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+         <h2 class="h2 article-title gradient-title">About me</h2>
+        </header>
+
+        <section class="reveal about-text">
+          <p>
+            Hi! I'm Devin, a fresh graduate in Informatics Engineering who loves building websites and designing clean, user-friendly interfaces. I enjoy working on web projects, learning new tools, and turning ideas into something people can actually use.
+          </p>
+
+          <p>
+           I craft digital experiences that blend smooth functionality with intuitive and attractive design. Every website I build reflects the brand’s identity while ensuring users can interact effortlessly. My focus is to turn your ideas into a clean, modern, and meaningful interface.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service reveal">
+
+          <h3 class="h3 service-title">What I Can Do For You</h3>
+
+          <ul class="service-list">
+
+            <!-- Web Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="grad-web" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E0C6" />
+                      <stop offset="100%" stop-color="#00A3FF" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M3 4h18v12H3z" stroke="url(#grad-web)" stroke-width="2" fill="none" />
+                  <circle cx="7" cy="8" r="1" fill="url(#grad-web)" />
+                  <circle cx="11" cy="8" r="1" fill="url(#grad-web)" />
+                  <circle cx="15" cy="8" r="1" fill="url(#grad-web)" />
+                  <path d="M3 18h18" stroke="url(#grad-web)" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  I build fast, responsive, and scalable websites with clean, modern, and optimized code.
+                </p>
+              </div>
+            </li>
+
+
+            <!-- UI/UX Design -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="grad-uiux" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E0C6" />
+                      <stop offset="100%" stop-color="#00A3FF" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M4 4h16v16H4z" stroke="url(#grad-uiux)" stroke-width="2" fill="none" />
+                  <path d="M8 8l8 8M16 8l-8 8" stroke="url(#grad-uiux)" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+                <p class="service-item-text">
+                  I design intuitive, modern, and user-centered interfaces that enhance user experience.
+                </p>
+              </div>
+            </li>
+
+
+            <!-- Graphic Design -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="grad-graphic" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E0C6" />
+                      <stop offset="100%" stop-color="#00A3FF" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="3" y="3" width="7" height="7" stroke="url(#grad-graphic)" stroke-width="2" fill="none"/>
+                  <circle cx="17" cy="7" r="4" stroke="url(#grad-graphic)" stroke-width="2" fill="none" />
+                  <polygon points="5,19 12,12 19,19" stroke="url(#grad-graphic)" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic Design</h4>
+                <p class="service-item-text">
+                  I create modern visuals including logos, posters, banners, and social media content.
+                </p>
+              </div>
+            </li>
+
+
+            <!-- System Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="grad-system" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E0C6" />
+                      <stop offset="100%" stop-color="#00A3FF" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="3" y="3" width="18" height="6" stroke="url(#grad-system)" stroke-width="2" fill="none"/>
+                  <rect x="3" y="10" width="18" height="6" stroke="url(#grad-system)" stroke-width="2" fill="none"/>
+                  <rect x="3" y="17" width="18" height="4" stroke="url(#grad-system)" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System Development</h4>
+                <p class="service-item-text">
+                  I build custom web-based systems with efficient workflows and seamless functionality.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials reveal">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alex Pastor</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Devin was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Salma Nur Azizah</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Devin was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Devin was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Devin was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal reveal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2025</time>
+
+              <div data-modal-text>
+                <p>
+                  Devin was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients reveal">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title gradient-title">Resume</h2>
+        </header>
+
+        <section class="timeline reveal">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universitas Muhammadiyah Purwokerto</h4>
+               <span>Bachelor’s Degree in Informatics Engineering</span>
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                 Bachelor of Informatics Engineering. Learned software engineering, web development, UI/UX design, and built multiple real-world projects including a full web-based PKL Information System.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMK Negeri 1 Padaherang</h4>
+              <span>Vocational High School – Software Engineering</span>
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+               Learned foundational programming, database management, and basic web development. Worked on several school projects related to website creation and system development.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline reveal">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Work Experience / Internship</h4>
+
+              <span>Web Developer Intern – Panti Asuhan Muhammadiyah Purwokerto</span>
+
+              <p class="timeline-text">
+                During my internship, I developed the official profile website for the Muhammadiyah Orphanage in Purwokerto, covering both UI/UX design and full website development. I ensured a responsive layout, clear content structure, optimized performance, and easy site management.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research & Development Project</h4>
+
+              <span>Internship Information System Research — SMK Negeri 1 Padaherang</span>
+
+              <p class="timeline-text">
+               I also conducted a research project to build a web-based internship information system for SMK Negeri 1 Padaherang using the Agile methodology. The system included features such as daily journals, report submission, supervisor verification, and an admin dashboard, developed with CodeIgniter and MySQL.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance Project</h4>
+
+              <span>Village Profile Website — Pucungkerep, Kebumen</span>
+
+              <p class="timeline-text">
+               As a freelance project, I designed and developed the official profile website for Pucungkerep Village in Kebumen, delivering an informative, responsive, and easy-to-manage platform that strengthens the village’s modern digital presence.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <header>
+          <h2 class="h2 article-title gradient-title">Certificate</h2>
+        </header>
+    <div class="cert-grid">
+        <div class="cert-item"><img src="assets/images/s1.jpg" alt=""></div>
+        <div class="cert-item"><img src="assets/images/s2.jpg" alt=""></div>
+        <div class="cert-item"><img src="assets/images/s3.jpg" alt=""></div>
+        <div class="cert-item"><img src="assets/images/s4.jpg" alt=""></div>
+        <div class="cert-item"><img src="assets/images/s5.png" alt=""></div>
+        <div class="cert-item"><img src="assets/images/s6.png" alt=""></div>
+    </div>
+
+
+ <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+
+       
+
+       
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title gradient-title">Portfolio</h2>
+        </header>
+
+        <section class="projects reveal">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+            
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p5.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Internship Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p1.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">A'ang Kost</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web School</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-commerce</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Crocoding</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p8.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tomovie</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+                <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sorum Kita</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Village Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web Profile</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p10.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Posyandu APP</h3>
+
+                <p class="project-category">Mobile Design</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p11.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Alif Store</h3>
+
+                <p class="project-category">Mobile Design</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p12.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Student APP </h3>
+
+                <p class="project-category">Mobile Design</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p13.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Internship Web</h3>
+
+                <p class="project-category">Web Design</p>
+
+              </a>
+            </li>
+
+             <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p14.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Coffe Shop</h3>
+
+                <p class="project-category">Mobile Design</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="skill" data-page="skill">
+
+        <header>
+          <h2 class="h2 article-title gradient-title">Tools & Skills</h2>
+        </header>
+
+        <!-- 🔥 TECHNOLOGIES / TOOLS SECTION -->
+        <section class="skills-icons reveal">
+          <h3 class="h4 skills-title">Languages • Frameworks • Tools</h3>
+
+          <div class="skills-grid">
+
+              <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+              <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+              <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="skill-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+              <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+              <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+              <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+              <div class="skill-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
+              <div class="skill-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="skill-item"><i class="devicon-codeigniter-plain colored"></i><span>CodeIgniter</span></div>
+              <div class="skill-item"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+              <div class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="skill-item"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind</span></div>
+              <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+              <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+              <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+              <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+              <div class="skill-item"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+              <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+              <div class="skill-item"><i class="devicon-cloudflare-plain colored"></i><span>Cloudflare</span></div>
+              <div class="skill-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+              <div class="skill-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+
+          </div>
+
+        </section>
+
+        <!-- 🔥 SKILL LEVEL SECTION (Progress Bars) -->
+        <section class="skill reveal" style="margin-top: 2rem;">
+
+          <h3 class="h4 skills-title m-">Skill Level</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Design</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic Design</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+   <article class="contact" data-page="contact">
+
+    <header>
+        <h2 class="h2 article-title gradient-title">Contact</h2>
+    </header>
+
+    <!-- MAPS TETAP & TIDAK TERGANGGU -->
+    <section class="mapbox reveal" data-mapbox>
+        <figure>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15816.270899624498!2d108.64935619310226!3d-7.675868636775738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e659845aba8e14d%3A0xe3536582dc837d98!2sPangandaran%2C%20Pananjung%2C%20Kec.%20Pangandaran%2C%20Kab.%20Pangandaran%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1765444452033!5m2!1sid!2sid"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen 
+                loading="lazy">
+            </iframe>
+        </figure>
+    </section>
+
+    <!-- FORM -->
+   <form 
+    id="contactForm"
+    action="https://script.google.com/macros/s/AKfycbxSOUvjbQCZpZZ3xY6lWimIXZWguuhoXmj8A0L60d5-JVjU8SNuLaIsxPNhzaMHtt4c-w/exec"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="submitted=true;"
+  >
+
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <div class="form-btn-wrapper">
+      <button id="sendBtn" type="submit">Send</button>
+    </div>
+
+  </form>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <div id="alert" class="alert-box"></div>
+
+
+
+
+
+</article>
+
+
+
+    </div>
+
+  </main>
+
+
+
+    
+     
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+ 
+  <script>
+
+const roles = ["Web Developer", "UI/UX Designer"];
+let index = 0;
+let charIndex = 0;
+
+const typingText = document.getElementById("typing-text");
+
+function typeEffect() {
+  const currentRole = roles[index];
+
+  // Ketik per huruf
+  typingText.textContent = currentRole.substring(0, charIndex + 1);
+  charIndex++;
+
+  // Jika sudah selesai mengetik
+  if (charIndex === currentRole.length) {
+    setTimeout(() => eraseEffect(), 1200); // jeda sebelum menghapus
+  } else {
+    setTimeout(typeEffect, 100); // kecepatan mengetik
+  }
+}
+
+function eraseEffect() {
+  const currentRole = roles[index];
+
+  // hapus satu per satu
+  typingText.textContent = currentRole.substring(0, charIndex - 1);
+  charIndex--;
+
+  // jika sudah terhapus semua
+  if (charIndex === 0) {
+    index = (index + 1) % roles.length; // lanjut ke profesi berikutnya
+    setTimeout(typeEffect, 300);
+  } else {
+    setTimeout(eraseEffect, 60); // kecepatan hapus
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  typeEffect();
+});
+
+
+
+</script>
+
+
+
+<script>
+var submitted = false;
+
+document.getElementById("hidden_iframe").addEventListener("load", function () {
+    if (submitted) {
+
+        const alertBox = document.getElementById("alert");
+
+        // Tampilkan alert sukses
+        alertBox.style.display = "block";
+        alertBox.className = "alert-box alert-success";
+        alertBox.innerText = "Pesan berhasil dikirim!";
+
+        // Reset form
+        document.getElementById("contactForm").reset();
+        submitted = false;
+
+        // Hilangkan alert setelah 10 detik
+        setTimeout(() => {
+            alertBox.style.display = "none";
+        }, 10000);
+    }
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
