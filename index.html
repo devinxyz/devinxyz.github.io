@@ -1121,27 +1121,34 @@
     </section>
 
     <!-- FORM -->
-   <form 
-    id="contactForm"
-    action="https://script.google.com/macros/s/AKfycbxSOUvjbQCZpZZ3xY6lWimIXZWguuhoXmj8A0L60d5-JVjU8SNuLaIsxPNhzaMHtt4c-w/exec"
-    method="POST"
-    target="hidden_iframe"
-    onsubmit="submitted=true;"
-  >
+<form 
+  id="contactForm"
+  action="https://script.google.com/macros/s/AKfycbxSOUvjbQCZpZZ3xY6lWimIXZWguuhoXmj8A0L60d5-JVjU8SNuLaIsxPNhzaMHtt4c-w/exec"
+  method="POST"
+  target="hidden_iframe"
+  onsubmit="handleSubmit()"
+>
 
-    <input type="text" name="fullname" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
+  <input type="text" name="fullname" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" required></textarea>
 
-    <div class="form-btn-wrapper">
-      <button id="sendBtn" type="submit">Send</button>
-    </div>
+  <div class="form-btn-wrapper">
+    <!-- Tombol Kirim -->
+    <button id="sendBtn" type="submit">Send</button>
 
-  </form>
+    <!-- Tombol Loading -->
+    <button id="loadingBtn" type="button" disabled style="display:none;">
+      <span class="spinner"></span> Sending...
+    </button>
+  </div>
 
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+</form>
 
-  <div id="alert" class="alert-box"></div>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<div id="alert" class="alert-box"></div>
+
 
 
 
@@ -1230,41 +1237,46 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 var submitted = false;
 
+function handleSubmit() {
+  submitted = true;
+
+  // tombol
+  const sendBtn = document.getElementById("sendBtn");
+  const loadingBtn = document.getElementById("loadingBtn");
+
+  // ganti tombol
+  sendBtn.style.display = "none";
+  loadingBtn.style.display = "inline-flex";
+}
+
 document.getElementById("hidden_iframe").addEventListener("load", function () {
-    if (submitted) {
+  if (submitted) {
 
-        const alertBox = document.getElementById("alert");
+    const alertBox = document.getElementById("alert");
+    const sendBtn = document.getElementById("sendBtn");
+    const loadingBtn = document.getElementById("loadingBtn");
 
-        // Tampilkan alert sukses
-        alertBox.style.display = "block";
-        alertBox.className = "alert-box alert-success";
-        alertBox.innerText = "Pesan berhasil dikirim!";
+    // tampilkan alert sukses
+    alertBox.style.display = "block";
+    alertBox.className = "alert-box alert-success";
+    alertBox.innerText = "Pesan berhasil dikirim!";
 
-        // Reset form
-        document.getElementById("contactForm").reset();
-        submitted = false;
+    // reset form
+    document.getElementById("contactForm").reset();
 
-        // Hilangkan alert setelah 10 detik
-        setTimeout(() => {
-            alertBox.style.display = "none";
-        }, 10000);
-    }
+    // kembalikan tombol
+    loadingBtn.style.display = "none";
+    sendBtn.style.display = "inline-block";
+
+    submitted = false;
+
+    // hilangkan alert setelah 5 detik
+    setTimeout(() => {
+      alertBox.style.display = "none";
+    }, 10000);
+  }
 });
-
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
